@@ -59,3 +59,14 @@ c87f53528453580ab5cc0ada9b2f1ff2f3a8e246481ea918abd18df5b084f876
 
 # 6: 
 
+parmi les 3 methodes MD5, SHA-1, SHA2 , la meilleure est  SHA2  car :
+
+MD5: sa taille est petite et il a une faible cryptographique interne relativement ,  donc plus vulnérable aux collisions , c'est à dire  deux fichiers pourront avoir la meme empreinte
+
+
+SHA-1: sa taille est aussi petite par raport à SHA-2, donc aussi vulnérable aux collision , en plus il existe des attaques qui le casse comme SHAttered attack , qui depuis sa découverte SHA-1 est abondonné
+
+
+SHA-2:
+sa taille est plus longue que les deux autres , collisions très difficile , et aucune attaque connue qui le casse jusqu'à aujourdhui 
+donc SHA-2 résiste plus , et en plus c'est le standard actuel .
