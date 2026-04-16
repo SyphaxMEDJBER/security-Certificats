@@ -1,0 +1,53 @@
+stud@ubuntu:~$ clear
+stud@ubuntu:~$ gpg --sign --encrypt --recipient "booob" LICENSE.txt
+
+You need a passphrase to unlock the secret key for
+user: "alice <alice@gmail.com>"
+2048-bit RSA key, ID 8DD96573, created 2026-04-15
+
+gpg: gpg-agent is not available in this session
+gpg: 2C3B5EC7: There is no assurance this key belongs to the named user
+
+pub  2048R/2C3B5EC7 2026-04-15 booob <bob@gmail.com>
+ Primary key fingerprint: 9364 4AF5 28EC ED0E 6939  AA98 B250 8AED 4673 4CDC
+      Subkey fingerprint: C41C 6819 AAE9 F3CB 99DB  3E2A 759C 30A4 2C3B 5EC7
+
+It is NOT certain that the key belongs to the person named
+in the user ID.  If you *really* know what you are doing,
+you may answer the next question with yes.
+
+Use this key anyway? (y/N) y
+File `LICENSE.txt.gpg' exists. Overwrite? (y/N) y
+stud@ubuntu:~$ scp LICENSE.txt.gpg stud@10.26.6.0:/home/stud/
+stud@10.26.6.0's password:
+LICENSE.txt.gpg                             100%  657     0.6KB/s   00:00
+stud@ubuntu:~$
+
+
+
+on a signé le fichié et on l'a chiffré 
+
+
+
+
+
+
+#######################"
+verification de la signature et dechiffrement 
+stud@ubuntu:~$ clear
+stud@ubuntu:~$ gpg --decrypt LICENSE.txt.gpg
+
+You need a passphrase to unlock the secret key for
+user: "booob <bob@gmail.com>"
+2048-bit RSA key, ID 2C3B5EC7, created 2026-04-15 (main key ID 46734CDC)
+
+gpg: gpg-agent is not available in this session
+gpg: encrypted with 2048-bit RSA key, ID 2C3B5EC7, created 2026-04-15
+      "booob <bob@gmail.com>"
+bonjour
+gpg: Signature made Wed 15 Apr 2026 06:50:01 PM CEST using RSA key ID 8DD96573
+gpg: Good signature from "alice <alice@gmail.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 8F99 9685 31FD DD00 54D9  7375 B065 F564 8DD9 6573
+stud@ubuntu:~$

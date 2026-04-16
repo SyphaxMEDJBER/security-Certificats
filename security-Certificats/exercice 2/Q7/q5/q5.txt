@@ -1,0 +1,4 @@
+stud@ubuntu:~$ gpg --export -a "bob" > BobPubKey.gpg
+stud@ubuntu:~$ gpg --export-secret-keys -a "bob" > BobPrivKey.gpg
+stud@ubuntu:~$
+

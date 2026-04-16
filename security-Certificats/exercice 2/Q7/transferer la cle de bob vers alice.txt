@@ -1,0 +1,24 @@
+de bob
+
+
+stud@ubuntu:~$ scp BobPubKey.gpg stud@10.26.1.99:/home/stud/
+The authenticity of host '10.26.1.99 (10.26.1.99)' can't be established.
+ECDSA key fingerprint is SHA256:D7TG70chq1UIkc5PniHUuAPvIMlSqSejCeSFBLHLXR4.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.26.1.99' (ECDSA) to the list of known hosts.
+stud@10.26.1.99's password:
+BobPubKey.gpg                                                                                                     100% 1686     1.7KB/s   00:00
+stud@ubuntu:~$
+
+
+importer depuis alice
+
+
+stud@ubuntu:~$ clear
+stud@ubuntu:~$ gpg --import BobPubKey.gpg
+gpg: key 46734CDC: public key "booob <bob@gmail.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1  (RSA: 1)
+stud@ubuntu:~$
+
+

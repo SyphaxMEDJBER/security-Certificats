@@ -1,0 +1,32 @@
+stud@ubuntu:~$ clear
+stud@ubuntu:~$ gpg --clearsign LICENSE.txt
+
+You need a passphrase to unlock the secret key for
+user: "alice <alice@gmail.com>"
+2048-bit RSA key, ID 8DD96573, created 2026-04-15
+
+gpg: gpg-agent is not available in this session
+stud@ubuntu:~$ ls
+AlicePrivKey.gpg  Desktop    GNS3             LICENSE.txt.gpg  Public
+AlicePubKey.gpg   Documents  LICENSE.txt      Music            Templates
+BobPubKey.gpg     Downloads  LICENSE.txt.asc  Pictures         Videos
+stud@ubuntu:~$ cat LICENSE.txt.asc
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+bonjour
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJp376MAAoJELBl9WSN2WVzEIEIAIkbmRrJNla/5821IAJN72rL
+MW6epjLrF5aCAg9xEi1QWV8T287PM8C3WyUq83fLE8BcH8L5u+ocY1T69Hv3IWRV
+P/oKifCNYN5mBXjjzjBn9RCEDpV2sxtcIL8Xg/C1laOmIAD4wnGcWRSUTkmeeRKX
+H3NIWRZMkDu2W/SKbyJo4BGkuj+MFktSA8xkazi9TyPXyiTxDXspy492bIgOtd3a
+eZvAFO+JfMdEgPXNEJFKCQI+YUngjVHUujAG5C77Y4L3BJaUBuvZSMF3obPOvSzt
+GzB1EPerBX2YX/v5RslCekeUrKTJtzez2Pj+qK0VFjfvuQH1+w57T8GJ3bGo10k=
+=oATb
+-----END PGP SIGNATURE-----
+stud@ubuntu:~$ scp LICENSE.txt.asc stud@10.26.6.0:/home/stud/
+stud@10.26.6.0's password:
+LICENSE.txt.asc                             100%  528     0.5KB/s   00:00
+stud@ubuntu:~$

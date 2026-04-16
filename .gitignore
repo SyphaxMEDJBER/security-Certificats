@@ -1,0 +1,5 @@
+desktop.ini
+*.gpg
+!*.txt.gpg
+!*.asc
+!*PubKey.gpg

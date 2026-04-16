@@ -1,0 +1,24 @@
+dechiffrement 
+
+stud@ubuntu:~$ clear
+stud@ubuntu:~$ gpg --decrypt LICENSE.txt.gpg
+
+You need a passphrase to unlock the secret key for
+user: "booob <bob@gmail.com>"
+2048-bit RSA key, ID 2C3B5EC7, created 2026-04-15 (main key ID 46734CDC)
+
+gpg: gpg-agent is not available in this session
+gpg: encrypted with 2048-bit RSA key, ID 2C3B5EC7, created 2026-04-15
+      "booob <bob@gmail.com>"
+bonjour
+stud@ubuntu:~$
+
+
+
+
+
+########################""
+
+
+Lorsque Bob déchiffre, GPG demande sa passphrase c pour acceder a la clé privé de bob ca   prouve que le fichier est protégé par sa clé privée seul lui peut lire le message "bonjour" car Alice l'a chiffré avec sa clé publique 
+
