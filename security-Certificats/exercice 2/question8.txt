@@ -1,0 +1,21 @@
+stud@ubuntu:~$ gpg --export -a "bob" > BobPubKey.gpg
+stud@ubuntu:~$ gpg --export-secret-keys -a "bob" > BobPrivKey.gpg
+stud@ubuntu:~$ clear
+stud@ubuntu:~$ gpg --import AlicePubKey.gpg
+gpg: key 8DD96573: "alice <alice@gmail.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+stud@ubuntu:~$
+stud@ubuntu:~$ gpg --list-keys
+/home/stud/.gnupg/pubring.gpg
+-----------------------------
+pub   2048R/8DD96573 2026-04-15
+uid                  alice <alice@gmail.com>
+sub   2048R/099234C0 2026-04-15
+
+pub   2048R/46734CDC 2026-04-15
+uid                  booob <bob@gmail.com>
+sub   2048R/2C3B5EC7 2026-04-15
+
+stud@ubuntu:~$
+

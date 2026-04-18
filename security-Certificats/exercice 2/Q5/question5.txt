@@ -1,0 +1,3 @@
+stud@ubuntu:~$ gpg --export -a "alice" > AlicePubKey.gpg
+stud@ubuntu:~$ gpg --export-secret-keys -a "alice" > AlicePrivKey.gpg
+stud@ubuntu:~$

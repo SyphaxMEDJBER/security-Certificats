@@ -1,0 +1,20 @@
+stud@ubuntu:~$ clear
+stud@ubuntu:~$ gpg --verify LICENSE.txt.asc
+gpg: Signature made Wed 15 Apr 2026 06:36:28 PM CEST using RSA key ID 8DD96573
+gpg: Good signature from "alice <alice@gmail.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 8F99 9685 31FD DD00 54D9  7375 B065 F564 8DD9 6573
+stud@ubuntu:~$
+
+
+
+
+
+gpg: Good signature from "alice <alice@gmail.com>"
+
+cela confirme l'authenticité et l'intégrité , bob a utilisé la cle publique de alice pour verifier la signature , et puisque ca fonctionne bob sait maintenant que c'est alice qui a envoyé ce message 
+
+
+
+

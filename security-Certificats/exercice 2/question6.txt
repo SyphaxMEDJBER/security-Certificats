@@ -1,0 +1,9 @@
+stud@ubuntu:~$ clear
+stud@ubuntu:~$ scp AlicePubKey.gpg stud@192.168.1.1:/home/stud/
+The authenticity of host '192.168.1.1 (192.168.1.1)' can't be established.
+ECDSA key fingerprint is SHA256:D7TG70chq1UIkc5PniHUuAPvIMlSqSejCeSFBLHLXR4.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '192.168.1.1' (ECDSA) to the list of known hosts.
+stud@192.168.1.1's password:
+AlicePubKey.gpg                       100% 1690     1.7KB/s   00:00
+stud@ubuntu:~$

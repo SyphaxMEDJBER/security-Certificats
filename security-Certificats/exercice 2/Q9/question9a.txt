@@ -1,0 +1,28 @@
+#########chiffrement 
+stud@ubuntu:~$ gpg --encrypt --recipient "booob" LICENSE.txt
+gpg: 2C3B5EC7: There is no assurance this key belongs to the named user
+
+pub  2048R/2C3B5EC7 2026-04-15 booob <bob@gmail.com>
+ Primary key fingerprint: 9364 4AF5 28EC ED0E 6939  AA98 B250 8AED 4673 4CDC
+      Subkey fingerprint: C41C 6819 AAE9 F3CB 99DB  3E2A 759C 30A4 2C3B 5EC7
+
+It is NOT certain that the key belongs to the person named
+in the user ID.  If you *really* know what you are doing,
+you may answer the next question with yes.
+
+Use this key anyway? (y/N) y
+stud@ubuntu:~$
+
+
+
+
+#######envoie a bob 
+
+stud@ubuntu:~$ scp LICENSE.txt.gpg stud@10.26.6.0:/home/stud/
+stud@10.26.6.0's password:
+LICENSE.txt.gpg                             100%  351     0.3KB/s   00:00
+stud@ubuntu:~$
+
+
+
+
